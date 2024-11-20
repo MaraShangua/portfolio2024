@@ -1,70 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Backend Developer Portfolio</title>
+    <title>류윤하 - 백엔드 개발자 포트폴리오</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- 헤더 섹션 -->
 <header>
-    <nav>
-        <h1>My Portfolio</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>류윤하</h1>
+        <p>백엔드 개발자 | 효율적이고 확장 가능한 시스템 개발에 열정을 가진 신입 개발자</p>
+    </div>
 </header>
 
+<!-- 메인 콘텐츠 -->
 <main>
+    <!-- 홈 섹션 -->
     <section id="home">
-        <h2>Welcome! I'm [Your Name]</h2>
-        <p>I am a Backend Developer passionate about building scalable and efficient systems.</p>
+        <h2>Introduction</h2>
+        <p>안녕하세요. 저는 신입 백엔드 개발자 류윤하입니다.</p>
+        <p>“작은 변화를 꾸준히 쌓아 큰 변화를 만든다”는 믿음으로 하루하루 성장하고 있습니다.</p>
+        <p>문제를 마주했을 때 두려워하기보다는 배우고 해결하려는 자세를 중요하게 생각하며,</p>
+        <p>함께 더 나은 미래를 만들어가는 사람이고 싶습니다.</p>
     </section>
 
+    <!-- 소개 섹션 -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm an experienced backend developer skilled in designing and deploying modern web systems.</p>
+        <p>
+            저는 Java와 Spring Boot를 기반으로 백엔드 개발에 관심을 가지고 있으며,</p>
+        <p>AWS를 활용한 클라우드 배포 경험을 통해 기초를 다졌습니다.</p>
         <ul>
-            <li><strong>Languages:</strong> Java, Python, SQL</li>
-            <li><strong>Frameworks:</strong> Spring Boot, Django</li>
-            <li><strong>Cloud:</strong> AWS, Docker</li>
+            <li><img src="icons/java.png" alt="Java Icon" class="icon"> Java</li>
+            <li><img src="icons/spring.png" alt="Spring Boot Icon" class="icon"> Spring Boot</li>
+            <li><img src="icons/aws.png" alt="AWS Icon" class="icon"> AWS</li>
         </ul>
     </section>
 
+    <!-- 프로젝트 섹션 -->
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>프로젝트</h2>
         <div class="project-card">
-            <h3>SafeRoute</h3>
-            <p>A navigation system using CCTV data to provide safe pedestrian routing.</p>
-            <p><strong>Tech Stack:</strong> Java, Spring Boot, MySQL</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+            <img src="images/dovi.png" alt="DOVI Project Image" class="project-image">
+            <div>
+                <h3>DOVI</h3>
+                <p>도보 여행자를 위한 도보 음성 내비게이션</p>
+                <a href="https://www.vavafair.com/home/booth/main/dovi?in_fair_id=bmx2024" target="_blank" rel="noopener noreferrer">DOVI 도보 내비게이션</a>
+            </div>
         </div>
         <div class="project-card">
-            <h3>Interaction API</h3>
-            <p>An API for exchanging and managing location data efficiently.</p>
-            <p><strong>Tech Stack:</strong> Java, Spring Boot, AWS</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+            <img src="images/hackathon.png" alt="Hackathon Project Image" class="project-image">
+            <div>
+                <h3>2024 블레이버스 MVP 해커톤 개발</h3>
+                <p>사용자 관련 데이터와 특정 물체에 대한 데이터를 교환 및 관리하는 API</p>
+            </div>
         </div>
     </section>
 
+    <!-- 활동 경력 섹션 -->
+    <section id="activities">
+        <h2>활동 경력</h2>
+        <div class="activity">
+            <h3>한경대학교 컴퓨터공학과</h3>
+            <p><strong>기간:</strong> 2018.03 - 2024.11</p>
+            <p>웹 서비스와 데이터베이스 시스템에 관심을 갖고 컴퓨터공학을 전공했고,</p>
+            <p>서버와 클라이언트 간의 데이터 흐름 최적화에 흥미를 느꼈습니다.</p>
+        </div>
+        <div class="activity">
+            <h3>MVP 해커톤 개발 최우수상</h3>
+            <p><strong>기간:</strong> 2024.08 </p>
+            <p><strong>행사:</strong> 2024 블레이버스 MVP 해커톤</p>
+            <p>Java와 Spring Boot를 사용하여 실제 창업 예정자의 MVP를 개발하여 최우수상을 수상했습니다.</p>
+        </div>
+        <div class="activity">
+            <h3>캡스톤디자인 경진대회 우수상</h3>
+            <p><strong>기간:</strong> 2024.03 - 2024.11</p>
+            <p><strong>행사:</strong> 2024학년도 BRIGHT MAKERS EXPO 제16회 캡스톤디자인 경진대회</p>
+            <p>Java와 Spring Boot를 사용해 음성으로 도보 경로를 제공하는 앱을 개발하여 우수상을 수상했습니다.</p>
+        </div>
+    </section>
+
+    <!-- 연락처 섹션 -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> your.email@example.com</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">your-username</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">your-profile</a></p>
+        <h2>연락처</h2>
+        <p><strong>이메일:</strong> yunharyu1234@gmail.com</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/MaraShangua" target="_blank" rel="noopener noreferrer">MaraShangua</a></p>
     </section>
 </main>
 
+<!-- 푸터 -->
 <footer>
-    <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+    <p>&copy; 2024 류윤하. All Rights Reserved.</p>
 </footer>
 
-<!-- External Script -->
+<!-- 외부 스크립트 -->
 <script src="script.js"></script>
 </body>
 </html>
