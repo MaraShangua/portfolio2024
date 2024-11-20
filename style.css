@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f8ff;
     color: #333333;
+    line-height: 1.6;
 }
 
 header {
@@ -16,11 +17,11 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 header h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 header ul {
@@ -56,18 +57,41 @@ section {
     margin-bottom: 2rem;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-card p {
+    margin: 0.5rem 0;
+    word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
 .project-card a {
     display: block;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     color: #3498db;
     text-decoration: none;
     font-weight: bold;
@@ -98,8 +122,8 @@ footer {
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin-right: 8px;
     vertical-align: middle;
 }
